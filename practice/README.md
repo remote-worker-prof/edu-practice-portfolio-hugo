@@ -52,6 +52,9 @@ Hugo Extended нужен для поддержки SCSS/Sass (пайплайн �
 - Ссылку на опубликованный сайт GitHub Pages.
 - Короткое описание, что реализовано (1–2 абзаца).
 
+## Учебники
+Полные учебники лежат в `practice/guides/README.md`.
+
 ## Официальные источники
 - Hugo Quick Start: https://gohugo.io/getting-started/quick-start/
 - Hugo: Host on GitHub Pages: https://gohugo.io/host-and-deploy/host-on-github-pages/
