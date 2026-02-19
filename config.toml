@@ -9,6 +9,10 @@ defaultContentLanguageInSubdir = true
   BookTheme = "light"
   BookSearch = true
   BookSection = "docs"
+  BookLogo = "logo.svg"
+  header_subtitle = "Проекты, исследования и дизайн‑кейсы в одном портфолио"
+  cta_primary_url = "/docs/"
+  cta_secondary_url = "/contact/"
 
 [languages]
   [languages.ru]
@@ -19,6 +23,15 @@ defaultContentLanguageInSubdir = true
     [languages.ru.params]
       description = "Шаблонный сайт-портфолио студента"
       author = "Имя Фамилия"
+      header_title = "Портфолио студента"
+      header_subtitle = "Проекты, исследования и дизайн‑кейсы в одном портфолио"
+      cta_primary = "Проекты"
+      cta_primary_url = "/docs/"
+      cta_secondary = "Контакты"
+      cta_secondary_url = "/contact/"
+      footer_name = "Имя Фамилия"
+      footer_email = "student@example.com"
+      footer_github = "https://github.com/example"
     [[languages.ru.menu.main]]
       name = "Главная"
       url = "/ru/"
@@ -40,6 +53,15 @@ defaultContentLanguageInSubdir = true
     [languages.en.params]
       description = "Student portfolio website template"
       author = "First Last"
+      header_title = "Student Portfolio"
+      header_subtitle = "Projects, research, and design cases in one place"
+      cta_primary = "Projects"
+      cta_primary_url = "/docs/"
+      cta_secondary = "Contact"
+      cta_secondary_url = "/contact/"
+      footer_name = "First Last"
+      footer_email = "student@example.com"
+      footer_github = "https://github.com/example"
     [[languages.en.menu.main]]
       name = "Home"
       url = "/en/"

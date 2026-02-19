@@ -1,0 +1,101 @@
+:root {
+  --brand-ink: #1f1b24;
+  --brand-accent: #ff6b6b;
+  --brand-accent-2: #5f27cd;
+  --brand-sun: #f7b731;
+  --brand-paper: #fff8f2;
+  --brand-soft: #f4f0ff;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 10% 0%, rgba(255, 107, 107, 0.18), transparent),
+    radial-gradient(1200px 600px at 90% 10%, rgba(95, 39, 205, 0.18), transparent),
+    linear-gradient(180deg, #fffaf6 0%, #ffffff 60%);
+  color: var(--brand-ink);
+}
+
+.book-brand img {
+  height: 36px;
+  width: 36px;
+  margin-right: 10px;
+}
+
+.book-header {
+  background: transparent;
+}
+
+.site-hero {
+  margin: 1.5rem 0 1rem;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.12), rgba(95, 39, 205, 0.12));
+  box-shadow: 0 20px 40px rgba(31, 27, 36, 0.08);
+}
+
+.site-hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.site-hero p {
+  font-size: 1.05rem;
+  max-width: 700px;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-actions .primary {
+  background: var(--brand-ink);
+  color: white;
+  box-shadow: 0 10px 20px rgba(31, 27, 36, 0.2);
+}
+
+.hero-actions .secondary {
+  background: white;
+  color: var(--brand-ink);
+  border: 1px solid rgba(31, 27, 36, 0.15);
+}
+
+.hero-actions a:hover {
+  transform: translateY(-2px);
+}
+
+.custom-footer {
+  margin-top: 2rem;
+  padding: 1.5rem 0 0.5rem;
+  border-top: 1px solid rgba(31, 27, 36, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.custom-footer a {
+  color: var(--brand-accent-2);
+  text-decoration: none;
+}
+
+.book-article {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  padding: 1.6rem 2rem;
+  box-shadow: 0 18px 40px rgba(31, 27, 36, 0.06);
+}

@@ -1,0 +1,17 @@
+{{- $p := .Site.Params -}}
+{{- $lp := .Site.Language.Params -}}
+<section class="site-hero">
+  <div class="flex align-center">
+    {{ with .Site.Params.BookLogo }}
+      <img src="{{ . | relURL }}" alt="Logo" style="height:48px;width:48px;margin-right:14px;" />
+    {{ end }}
+    <div>
+      <h1>{{ $lp.header_title | default .Site.Title }}</h1>
+      <p>{{ $lp.header_subtitle | default $p.header_subtitle }}</p>
+    </div>
+  </div>
+  <div class="hero-actions">
+    <a class="primary" href="{{ $lp.cta_primary_url | default $p.cta_primary_url | relLangURL }}">{{ $lp.cta_primary | default "Проекты" }}</a>
+    <a class="secondary" href="{{ $lp.cta_secondary_url | default $p.cta_secondary_url | relLangURL }}">{{ $lp.cta_secondary | default "Контакты" }}</a>
+  </div>
+</section>

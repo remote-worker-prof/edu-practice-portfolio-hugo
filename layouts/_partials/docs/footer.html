@@ -1,0 +1,11 @@
+{{- $lp := .Site.Language.Params -}}
+<div class="custom-footer">
+  <div>
+    <strong>{{ $lp.footer_name | default "Имя Фамилия" }}</strong> · © {{ now.Year }}
+  </div>
+  <div>
+    <a href="mailto:{{ $lp.footer_email | default "student@example.com" }}">{{ $lp.footer_email | default "student@example.com" }}</a>
+    · <a href="{{ $lp.footer_github | default "https://github.com/example" }}" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</div>
+{{ partial "docs/prev-next" . }}
