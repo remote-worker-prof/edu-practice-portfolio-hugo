@@ -13,6 +13,7 @@
 4. `multilingual.md` — отдельный разбор многоязычности в текущем проекте (RU/EN, структура, меню, URL).
 5. `hugo-templates.md` — подробный учебник по языку шаблонов Hugo с примерами и ссылками на лучшие гайды.
 6. `git-ssh-github.md` — большой учебник по Git, SSH, ssh-agent и работе с GitHub.
+7. `agents-workflow-spec.md` — теория и объяснение синтаксиса `agents-issue-workflow.cncf.yaml` (CNCF Serverless Workflow).
 
 ## Как использовать
 
@@ -22,3 +23,4 @@
 4. Для поддержки RU/EN структуры используйте `multilingual.md` как техническую памятку.
 5. Для работы с шаблонами и расширением оформления изучите `hugo-templates.md`.
 6. Для настройки среды и безопасной работы с GitHub используйте `git-ssh-github.md`.
+7. Для понимания агентного workflow используйте `agents-workflow-spec.md`.
