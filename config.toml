@@ -1,0 +1,54 @@
+baseURL = "https://example.org/"
+title = "Портфолио"
+theme = "hugo-book"
+languageCode = "ru"
+defaultContentLanguage = "ru"
+defaultContentLanguageInSubdir = true
+
+[params]
+  BookTheme = "light"
+  BookSearch = true
+  BookSection = "docs"
+
+[languages]
+  [languages.ru]
+    title = "Портфолио"
+    languageName = "Русский"
+    weight = 1
+    contentDir = "content/ru"
+    [languages.ru.params]
+      description = "Шаблонный сайт-портфолио студента"
+      author = "Имя Фамилия"
+    [[languages.ru.menu.main]]
+      name = "Главная"
+      url = "/ru/"
+      weight = 1
+    [[languages.ru.menu.main]]
+      name = "О себе"
+      url = "/ru/about/"
+      weight = 2
+    [[languages.ru.menu.main]]
+      name = "Контакты"
+      url = "/ru/contact/"
+      weight = 3
+
+  [languages.en]
+    title = "Portfolio"
+    languageName = "English"
+    weight = 2
+    contentDir = "content/en"
+    [languages.en.params]
+      description = "Student portfolio website template"
+      author = "First Last"
+    [[languages.en.menu.main]]
+      name = "Home"
+      url = "/en/"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/en/about/"
+      weight = 2
+    [[languages.en.menu.main]]
+      name = "Contact"
+      url = "/en/contact/"
+      weight = 3
