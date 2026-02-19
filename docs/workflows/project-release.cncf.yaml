@@ -1,0 +1,38 @@
+id: project-release-workflow
+version: "1.0"
+specVersion: "0.8"
+name: "Project Release Workflow"
+description: "Учебный релизный workflow: сборка -> ручная проверка -> деплой"
+start: buildSite
+states:
+  - name: buildSite
+    type: operation
+    actions:
+      - name: build
+        functionRef:
+          refName: buildSite
+    transition: reviewGate
+
+  - name: reviewGate
+    type: operation
+    actions:
+      - name: manualReview
+        functionRef:
+          refName: manualApproval
+    transition: deploySite
+
+  - name: deploySite
+    type: operation
+    actions:
+      - name: deploy
+        functionRef:
+          refName: deploySite
+    end: true
+
+functions:
+  - name: buildSite
+    operation: "shell:hugo --minify (placeholder)"
+  - name: manualApproval
+    operation: "shell:manual review step (placeholder)"
+  - name: deploySite
+    operation: "shell:deploy to pages (placeholder)"

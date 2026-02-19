@@ -1,0 +1,38 @@
+id: project-linear-workflow
+version: "1.0"
+specVersion: "0.8"
+name: "Project Linear Workflow"
+description: "Учебный линейный workflow: подготовка контента -> сборка -> деплой"
+start: prepareContent
+states:
+  - name: prepareContent
+    type: operation
+    actions:
+      - name: updateContent
+        functionRef:
+          refName: updateContent
+    transition: buildSite
+
+  - name: buildSite
+    type: operation
+    actions:
+      - name: hugoBuild
+        functionRef:
+          refName: buildSite
+    transition: deploySite
+
+  - name: deploySite
+    type: operation
+    actions:
+      - name: deploy
+        functionRef:
+          refName: deploySite
+    end: true
+
+functions:
+  - name: updateContent
+    operation: "shell:prepare content (placeholder)"
+  - name: buildSite
+    operation: "shell:hugo --minify (placeholder)"
+  - name: deploySite
+    operation: "shell:deploy to pages (placeholder)"

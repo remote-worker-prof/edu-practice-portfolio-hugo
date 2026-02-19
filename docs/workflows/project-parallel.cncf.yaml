@@ -1,0 +1,37 @@
+id: project-parallel-workflow
+version: "1.0"
+specVersion: "0.8"
+name: "Project Parallel Workflow"
+description: "Учебный параллельный workflow: линт и сборка выполняются одновременно"
+start: qualityAndBuild
+states:
+  - name: qualityAndBuild
+    type: parallel
+    branches:
+      - name: lintBranch
+        actions:
+          - name: lint
+            functionRef:
+              refName: runLint
+      - name: buildBranch
+        actions:
+          - name: build
+            functionRef:
+              refName: buildSite
+    transition: deploySite
+
+  - name: deploySite
+    type: operation
+    actions:
+      - name: deploy
+        functionRef:
+          refName: deploySite
+    end: true
+
+functions:
+  - name: runLint
+    operation: "shell:lint content and templates (placeholder)"
+  - name: buildSite
+    operation: "shell:hugo --minify (placeholder)"
+  - name: deploySite
+    operation: "shell:deploy to pages (placeholder)"
