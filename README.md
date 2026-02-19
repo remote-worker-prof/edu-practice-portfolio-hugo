@@ -1,0 +1,4 @@
+## Лицензия
+
+© Dmitry Vlasov 2026. All rights reserved.
+Licensed under CC BY-NC-ND 4.0 – https://creativecommons.org/licenses/by-nc-nd/4.0/

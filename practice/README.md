@@ -66,3 +66,7 @@ Hugo Extended нужен для поддержки SCSS/Sass (пайплайн �
 - Hugo: Host on GitHub Pages: https://gohugo.io/host-and-deploy/host-on-github-pages/
 - GitHub Pages: https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
 - GitHub Actions для Pages: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+
+## Лицензия
+© Dmitry Vlasov 2026. All rights reserved.  
+Licensed under CC BY-NC-ND 4.0 – https://creativecommons.org/licenses/by-nc-nd/4.0/
