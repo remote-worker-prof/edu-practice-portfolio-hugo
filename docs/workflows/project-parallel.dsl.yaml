@@ -1,0 +1,25 @@
+document:
+  dsl: '1.0.3'
+  namespace: edu.practice
+  name: project-parallel
+  version: '1.0.0'
+  title: 'Project Parallel Workflow (DSL)'
+  summary: 'Учебный параллельный workflow: линт и сборка выполняются одновременно'
+
+do:
+  - qualityAndBuild:
+      fork:
+        branches:
+          - lintBranch:
+              run:
+                shell:
+                  command: 'lint content and templates (placeholder)'
+          - buildBranch:
+              run:
+                shell:
+                  command: 'hugo --minify (placeholder)'
+      then:
+        - deploySite:
+            run:
+              shell:
+                command: 'deploy to pages (placeholder)'

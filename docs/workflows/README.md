@@ -7,8 +7,11 @@
 ## Список файлов
 
 1. `project-linear.cncf.yaml` — линейный процесс: подготовка → контент → сборка → деплой.
+   - `project-linear.dsl.yaml` — тот же процесс в формате DSL.
 2. `project-parallel.cncf.yaml` — параллельные ветки (например, линт и сборка) с объединением.
+   - `project-parallel.dsl.yaml` — тот же процесс в формате DSL.
 3. `project-release.cncf.yaml` — выпуск релиза с ручной проверкой и финальным деплоем.
+   - `project-release.dsl.yaml` — тот же процесс в формате DSL.
 4. `state-vs-dsl.md` — сравнение классического state‑формата v0.8 и нового DSL.
 
 ## Как читать примеры

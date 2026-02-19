@@ -1,0 +1,21 @@
+document:
+  dsl: '1.0.3'
+  namespace: edu.practice
+  name: project-release
+  version: '1.0.0'
+  title: 'Project Release Workflow (DSL)'
+  summary: 'Учебный релизный workflow: сборка -> ручная проверка -> деплой'
+
+do:
+  - buildSite:
+      run:
+        shell:
+          command: 'hugo --minify (placeholder)'
+  - reviewGate:
+      run:
+        shell:
+          command: 'manual review step (placeholder)'
+  - deploySite:
+      run:
+        shell:
+          command: 'deploy to pages (placeholder)'

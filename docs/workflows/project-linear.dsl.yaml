@@ -1,0 +1,21 @@
+document:
+  dsl: '1.0.3'
+  namespace: edu.practice
+  name: project-linear
+  version: '1.0.0'
+  title: 'Project Linear Workflow (DSL)'
+  summary: 'Учебный линейный workflow: подготовка контента -> сборка -> деплой'
+
+do:
+  - prepareContent:
+      run:
+        shell:
+          command: 'prepare content (placeholder)'
+  - buildSite:
+      run:
+        shell:
+          command: 'hugo --minify (placeholder)'
+  - deploySite:
+      run:
+        shell:
+          command: 'deploy to pages (placeholder)'
