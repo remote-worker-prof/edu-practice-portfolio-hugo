@@ -16,6 +16,11 @@ bd update <id> --status in_progress  # Claim work
 bd close <id>         # Complete work
 ```
 
+## Documentation Rules
+
+- Never insert non-functional citation markers like `cite...` into markdown files.
+- Always place real, clickable URLs in a **Sources** or **Links** section at the end of documentation.
+
 ## Landing the Plane (Session Completion)
 
 **When ending a work session**, you MUST complete ALL steps below.
