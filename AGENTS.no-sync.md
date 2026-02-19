@@ -6,6 +6,7 @@ This file is a legacy reference. Agents should ignore it. The active workflow is
 
 Use the CNCF workflow spec in `agents-issue-workflow.no-sync.cncf.yaml` for issue → work → stage → commit → close.
 Commit format is defined in that workflow file. Issue IDs in commit headers must be wrapped in square brackets, e.g. `[epph-123] ...`.
+The workflow file uses the Serverless Workflow DSL format (see `dsl.md`).
 
 ## Quick Reference
 
