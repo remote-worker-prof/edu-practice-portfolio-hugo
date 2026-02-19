@@ -46,13 +46,14 @@ Hugo Extended нужен для поддержки SCSS/Sass (пайплайн �
 ## Требования к workflow GitHub Actions
 - В workflow должны использоваться `actions/configure-pages`, `actions/upload-pages-artifact`, `actions/deploy-pages`.
 - Деплой‑job должен иметь разрешения `pages: write` и `id-token: write`, быть связан с build‑job через `needs`, и использовать окружение `github-pages` с `url` из `page_url`.
+
 ## Что сдавать
 - Ссылку на репозиторий GitHub.
 - Ссылку на опубликованный сайт GitHub Pages.
 - Короткое описание, что реализовано (1–2 абзаца).
 
 ## Критерии оценки
-См. `practicum-01/rubric.md`.
+См. `rubric.md`.
 
 ## Официальные источники
 - Hugo Quick Start: https://gohugo.io/getting-started/quick-start/
