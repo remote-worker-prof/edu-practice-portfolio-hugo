@@ -2,7 +2,7 @@ id: agents-issue-workflow
 version: "1.0"
 specVersion: "0.8"
 name: "Agent Issues + Git + Beads Workflow"
-description: "Strict order for issues, work, stage, commit, and sync (commit header: [<id>] <type>(P#): <title>; body: description; file list appended)"
+description: "Strict order for issues, work, stage, commit, and sync (commit header: [<id>] <type>(P#): <title>; body: description; file list appended). Issue IDs must be in square brackets."
 x-agent:
   bound_instructions: "AGENTS.md"
   intent: "Use this workflow for all issue-driven work in this repo"

@@ -5,7 +5,7 @@ This project uses **bd** (beads) for issue tracking. Run `bd onboard` to get sta
 ## Workflow Binding
 
 Use the CNCF workflow spec in `agents-issue-workflow.no-sync.cncf.yaml` for issue → work → stage → commit → close.
-Commit format is defined in that workflow file.
+Commit format is defined in that workflow file. Issue IDs in commit headers must be wrapped in square brackets, e.g. `[epph-123] ...`.
 
 ## Quick Reference
 
