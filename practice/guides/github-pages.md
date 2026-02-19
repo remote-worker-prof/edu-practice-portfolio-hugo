@@ -76,6 +76,15 @@ chmod 600 ~/.ssh/agent.env
 
 После этого ключ будет подхватываться из агента, а не требовать пароль каждый раз.
 
+## 8. Если доступ к репозиторию с другого аккаунта
+
+Если основной ключ SSH привязан к другому GitHub‑аккаунту, используйте отдельный host‑alias (например, `github-worker`) и замените remote на общий шаблон:
+
+```bash
+git remote set-url origin git@github-worker:<owner>/<repo>.git
+git push -u origin main
+```
+
 ## Sources
 
 Официальные материалы:
