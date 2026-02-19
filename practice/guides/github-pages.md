@@ -63,6 +63,19 @@ GitHub Actions дает контролируемую, повторяемую с�
 2. Перейдите в **Settings → Pages** и проверьте ссылку на сайт.
 3. Откройте сайт в браузере и проверьте корректность ссылок.
 
+## 7. SSH‑ключ и агент для публикации (WSL)
+
+Чтобы `bd sync` или `git push` работали без запроса пароля, можно настроить `ssh-agent` и сохранить окружение агента в `~/.ssh/agent.env`. В WSL выполните:
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519_github
+printf 'export SSH_AUTH_SOCK=%s\nexport SSH_AGENT_PID=%s\n' "$SSH_AUTH_SOCK" "$SSH_AGENT_PID" > ~/.ssh/agent.env
+chmod 600 ~/.ssh/agent.env
+```
+
+После этого ключ будет подхватываться из агента, а не требовать пароль каждый раз.
+
 ## Sources
 
 Официальные материалы:
