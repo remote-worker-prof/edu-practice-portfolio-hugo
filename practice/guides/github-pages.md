@@ -85,6 +85,28 @@ git remote set-url origin git@github-worker:<owner>/<repo>.git
 git push -u origin main
 ```
 
+Пример общего SSH‑конфига (в стиле вашего, но без персональных данных):
+
+```sshconfig
+# GitHub (основной аккаунт)
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_github
+  AddKeysToAgent yes
+  IdentitiesOnly yes
+  PreferredAuthentications publickey
+
+# GitHub (второй аккаунт)
+Host github-worker
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_github_worker
+  AddKeysToAgent yes
+  IdentitiesOnly yes
+  PreferredAuthentications publickey
+```
+
 ## Sources
 
 Официальные материалы:
